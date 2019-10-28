@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../lib/js/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+<link href="../lib/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css">
+<link href="../lib/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../lib/css/padrao.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="section section-danger text-justify">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12 text-center">
+					<h1 class="text-center">Sistema de Gerenciamento de Cursos</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h3 class="tt_menu">&gt;&gt; ALUNOS - RESPONDER QUESTIONARIO
+						&lt;&lt;</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<form class="form-horizontal" role="form" action="http://localhost:8085/ProjetoWEB/ServletController" method="post">
+						<div class="form-group">
+							<div class="col-sm-3">
+								<label for="inputIdQuestionario" class="control-label">Informar o
+									ID do questionario:</label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text" name="IdQuestionario" class="form-control" id="inputIdQuestionario"
+									placeholder="ID do Questionário"
+									title="Digite a numeração do questionário" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-3">
+								<label for="inputIdProfessor" class="control-label">Informar o
+									ID do Professor:</label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text" name="IdProfessor" class="form-control" id="inputIdProfessor"
+									placeholder="ID do Professor"
+									title="Digite o ID do professor" required>
+							</div>
+						</div>
+												<div class="form-group">
+							<div class="col-sm-3">
+								<label for="inputIdAluno" class="control-label">Informar o
+									ID do Aluno:</label>
+							</div>
+							<div class="col-sm-9">
+								<input type="text" name="IdAluno" class="form-control" id="inputIdAluno"
+									placeholder="ID do Aluno"
+									title="Digite o ID do Aluno" required>
+							</div>
+						</div>
+						<input type="hidden" name="idformulario" value="1"> 
+						<input type="hidden" name="tipoformulario" value="2">
+						<button type="submit" class="btn btn-danger">Responder</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="navbar navbar-fixed-bottom bgred">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center" style="top: 13px; color: #fff;">©
+						APS Desenvolvimento de aplicações web</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center corrigir">
+					<a class="btn btn-default" href="javascript:window.history.go(-1)">Voltar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
